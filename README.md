@@ -46,7 +46,7 @@ Once the data has been processed, text saying `Newest sessions for each site sav
 ![alt text](images/notebook_ran.png)
 
 ## 4. Download New Data
-The new data will now show up in the Jupyter files as `new_data.csv`.
+The new data will now show up in the Jupyter files as `new_data.csv`.  
 ![alt text](images/new_data.png)
 
 Right click the file, and click `Download`. The file will be saved as `new_data.csv`.

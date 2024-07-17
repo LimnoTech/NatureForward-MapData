@@ -7,9 +7,41 @@ This repository is for Nature Forward to convert their Salesforce data into usab
 <br />
 <br />
 
-# **Refreshing WQM ArcGIS Map Data:**
+Quick Links:  
+[Updating Sites Feature Layer](#1-updating-sites-featurelayer)  
+[Updating Critters Table](#2-updating-critters-table)  
+[Updating IBI Scores Table](#3-updating-ibi-scores-table)
 
-## 1. Download `LimnoTech Session/Critter` Report
+# 1. Updating Sites FeatureLayer
+## 1.1 Download `LimnoTech Sites` Report
+Navigate to the [`Reports`](https://natureforward.my.salesforce.com/00O/o) tab on Salesforce. Under the **LimnoTech** folder there is a report titled [`LimnoTech Sites`](https://natureforward.my.salesforce.com/00OUw000001pS05).
+
+![alt text](images/report_buttons.png)  
+Click `Run Report` and then click `Export Details`.  
+
+![alt text](images/export_page.png) 
+Change to the following export settings and then click `Export`.
+- **Export File Encoding** = `Unicode (UTF-8)` 
+- **Export File Format** = `Comma Delimited .csv` 
+
+Your file will then download to your browser. The file name will be similar to ***report1719589800854.csv***, but with different numbers.
+
+## 1.2 Run the ArcGIS Online Jupyter Notebook
+Under the [Notebook](https://anshome.maps.arcgis.com/home/notebook/notebookhome.html) tab in ArcGIS online, open the [Update Sites FeatureLayer]() notebook.
+
+![alt text](images/run_notebook.png)   
+Click on the cell with code and then click `Run`. While the cell is running, it will have this symbol `In [*]`, once finished it will change to `In [1]`.  
+
+![alt text](images/sites_upload.png)  
+Scroll to the bottom of the notebook and click the `Upload` button. Upload the report you downloaded in [Step 1](#11-download-limnotech-sites-report), then click `Update Layer`.  
+
+![alt text](images/sites_updated.png)  
+A progress bar will appear and update while the code is running. The layer is successfully updated when the progress bar reaches 100% and `Sites layer updated` is displayed.
+
+
+# 2. Updating Critters Table
+
+## 2.1 Download `LimnoTech Session/Critter` Report
 Navigate to the [`Reports`](https://natureforward.my.salesforce.com/00O/o) tab on Salesforce. Under the **LimnoTech** folder there is a report titled [`LimnoTech Session/Critter`](https://natureforward.my.salesforce.com/00OUw000001htqH).
 
 ![alt text](images/report_buttons.png)  
@@ -22,38 +54,22 @@ Change to the following export settings and then click `Export`.
 
 Your file will then download to your browser. The file name will be similar to ***report1719589800854.csv***, but with different numbers.
 
-## 2. Download the Jupyter Notebook
-Navigate to the [data_processing.ipynb](https://github.com/LimnoTech/NatureForward-MapData/blob/main/data_processing.ipynb) notebook. Click the 3 dots in the right corner and selected **Download**. The downloaded file will be named `data_processing.ipynb`.
+## 2.2 Run the ArcGIS Online Jupyter Notebook
+Under the [Notebook](https://anshome.maps.arcgis.com/home/notebook/notebookhome.html) tab in ArcGIS online, open the [Update Critters Table](https://anshome.maps.arcgis.com/home/notebook/notebook.html?id=c49b75f26cd945b4bcf5e3faa6f7e858) notebook.
 
-![alt text](images/download_notebook.png)
+![alt text](images/run_notebook.png)   
+Click on the cell with code and then click `Run`. While the cell is running, it will have this symbol `In [*]`, once finished it will change to `In [1]`.  
 
-## 3. Running the Notebook
-Navigate to [JupyterLab](https://jupyter.org/try-jupyter/lab/). Click the upload button located in the upper left hand side of the page and upload the `data_processing.ipynb` file.   
-![alt text](images/jupyter_lab.png)
+![alt text](images/critters_upload.png)  
+Scroll to the bottom of the notebook and click the `Upload` button. Upload the report you downloaded in [Step 1](#11-download-limnotech-sites-report), then click `Update Table`.  
 
-
-The notebook will now be located in your Jupyter files. Open up the notebook by double clicking it.   
-![alt text](images/notebook_nav.png)
-
-To run the notebook click the arrow located in the toolbar. While the notebook is running, the cell will have this symbol `[*]`, once finished it will change to `[1]`.  
-![alt text](images/run_notebook.png)
-
-Scroll to the bottom of the notebook and click the `Upload` button. Upload the report you downloaded in [Step 1](#1-download-limnotech-sessioncritter-report), then click `Transform Data`.  
-![alt text](images/buttons.png)
-
-Once the data has been processed, text saying `Newest sessions for each site saved to new_data.csv` will appear.  
-
-![alt text](images/notebook_ran.png)
-
-## 4. Download New Data
-The new data will now show up in the Jupyter files as `new_data.csv`.  
-![alt text](images/new_data.png)
-
-Right click the file, and click `Download`. The file will be saved as `new_data.csv`.
-![alt text](images/download_new_data.png)
+![alt text](images/critters_updated.png)  
+A progress bar will appear and update while the code is running. The layer is successfully updated when the progress bar reaches 100% and `Critters table updated` is displayed.
 
 
-## 5. Download `LimnoTech IBI Over Time` Report
+
+# 3. Updating IBI Scores Table
+## 3.1. Download `LimnoTech IBI Over Time` Report
 Navigate back to the [`Reports`](https://natureforward.my.salesforce.com/00O/o) tab on Salesforce. Under the **LimnoTech** folder there is a report titled [`LimnoTech IBI Over Time`](https://natureforward.my.salesforce.com/00OUw000001huj7).
 
 ![alt text](images/report_buttons.png)  
@@ -66,4 +82,15 @@ Change to the following export settings and then click `Export`.
 
 Your file will then download to your browser. The file name will be similar to ***report1719589800854.csv***, but with different numbers.
 
-## 6. TODO: Upload to ArcGIS
+## 3.2 Run the ArcGIS Online Jupyter Notebook
+Under the [Notebook](https://anshome.maps.arcgis.com/home/notebook/notebookhome.html) tab in ArcGIS online, open the [Update IBI Scores Table](https://anshome.maps.arcgis.com/home/notebook/notebook.html?id=bb8de15473674581ada5d5ed64b019d5) notebook.
+
+![alt text](images/run_notebook.png)   
+Click on the cell with code and then click `Run`. While the cell is running, it will have this symbol `In [*]`, once finished it will change to `In [1]`.  
+
+![alt text](images/ibi_upload.png)  
+Scroll to the bottom of the notebook and click the `Upload` button. Upload the report you downloaded in [Step 1](#11-download-limnotech-sites-report), then click `Update Table`.  
+
+![alt text](images/ibi_updated.png)  
+A progress bar will appear and update while the code is running. The layer is successfully updated when the progress bar reaches 100% and `IBI Scores table updated` is displayed.
+

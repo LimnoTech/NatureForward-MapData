@@ -14,7 +14,7 @@ Quick Links:
 
 # 1. Updating Sites FeatureLayer
 ## 1.1 Download `LimnoTech Sites` Report
-Navigate to the [`Reports`](https://natureforward.my.salesforce.com/00O/o) tab on Salesforce. Under the **LimnoTech** folder there is a report titled [`LimnoTech Sites`](https://natureforward.my.salesforce.com/00OUw000001pS05).
+Navigate to the <a href="https://natureforward.my.salesforce.com/00O/o" target="_blank">Reports</a> tab on Salesforce. Under the **LimnoTech** folder there is a report titled [`LimnoTech Sites`](https://natureforward.my.salesforce.com/00OUw000001pS05).
 
 Click `Run Report` and then click `Export Details`.  
 ![alt text](images/report_buttons.png)   

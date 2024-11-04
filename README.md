@@ -4,8 +4,8 @@ This repository is for Nature Forward to convert their Salesforce data into usab
 
 **Old Map**: https://natureforward.my.salesforce-sites.com/enterWQMSession/displaymapmostrecentwqm
 
-**Note:** Do NOT save the notebooks after running.  
-![alt text](images/leave.png)
+**Note:** Do NOT save the notebooks after running. If this pop-up displays after running a notebook, click LEAVE.
+<img src="images/leave.png" width="300"/>
 
 After running a notebook, you can check the `Modified` column on the ArcGIS Online [Content](https://anshome.maps.arcgis.com/home/content.html?sortField=modified&sortOrder=desc&view=table&folder=6c942c2f53de4053ad864e756ff9484d#my) page, to see if the notebooks updated to today's date.  
 ![alt text](images/modified.png)

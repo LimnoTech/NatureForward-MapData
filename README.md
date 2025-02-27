@@ -125,3 +125,25 @@ Scroll to the bottom of the notebook and click the `Upload` button. Upload the r
 
 A progress bar will appear and update while the code is running. The layer is successfully updated when the progress bar reaches 100% and `IBI Scores table updated` is displayed.  
 ![alt text](images/ibi_updated.png)
+
+## NEW STEP: Add "Score" column to IBI Table
+
+On ArcGIS Online, navigate to the [IBI Scores](https://anshome.maps.arcgis.com/home/item.html?id=fd3ee2281add485bbb2332bd52488969) Table (hosted). Click on `Data` in the blue navigation bar.
+
+![alt text](images/ibi_scores_nav.png)
+
+Click on `Fields` in the upper right-hand of the page. Then clik the large `+ Add` button on the left.
+
+![alt text](images/ibi_scores_fields.png)  
+![alt text](images/ibi_scores_add.png) 
+
+On the "Add Field" popup, write `Score` in for "Field Name" and change "Type" to `Integer`. Then click `Add New Field`.
+
+![alt text](images/ibi_scores_popup.png) 
+
+
+
+
+
+
+

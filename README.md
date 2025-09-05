@@ -132,18 +132,15 @@ On ArcGIS Online, navigate to the [IBI Scores](https://anshome.maps.arcgis.com/h
 
 ![alt text](images/ibi_scores_nav.png)
 
-Click on `Fields` in the upper right-hand of the page. Then clik the large `+ Add` button on the left.
+Click on `Fields` in the upper left-hand of the page. Then click the large `+` Add Field button on the right.
 
 ![alt text](images/ibi_scores_fields.png)  
-![alt text](images/ibi_scores_add.png) 
+![alt text](images/ibi_scores_add.png)
 
-On the "Add Field" popup, write `Score` in for "Field Name" and change "Type" to `Integer`. Then click `Add New Field`.
+On the "Add Field" popup, click `Numbers` and then select `Integer` from the new dropdown. After, click the blue `Next` in the bottom right hand corner.
 
-![alt text](images/ibi_scores_popup.png) 
+![alt text](images/ibi_scores_type.png)
 
+In the next section, write `Score` in for "Field Name". The rest of the inputs can be ignored. Then click `Add field`.
 
-
-
-
-
-
+![alt text](images/ibi_scores_name.png)

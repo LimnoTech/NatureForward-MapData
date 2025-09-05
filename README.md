@@ -1,6 +1,6 @@
 # NatureForward-MapData
 
-This repository is for Nature Forward to convert their Salesforce data into usable data for ArcGis. Test  
+This repository is for Nature Forward to convert their Salesforce data into usable data for ArcGis.   
 **Old Map**: https://natureforward.my.salesforce-sites.com/enterWQMSession/displaymapmostrecentwqm
 
 **Note:** Do NOT save the notebooks after running. If this pop-up displays after running a notebook, click LEAVE.
